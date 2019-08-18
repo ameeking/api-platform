@@ -1,4 +1,4 @@
-FROM node:11.5-alpine
+FROM node:10.10-alpine
 
 RUN mkdir -p /usr/src/client
 
@@ -12,4 +12,4 @@ RUN yarn install
 
 COPY . ./
 
-CMD yarn start
+CMD yarn serve
